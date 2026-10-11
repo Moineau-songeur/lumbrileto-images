@@ -19,6 +19,9 @@ se pousse **chez lui**, séparément.
 | Fichier | Sert à |
 |---|---|
 | `etoile-forme.svg` | La silhouette de l'étoile, utilisée partout en découpe (puces de catégories, compteurs de la liste des sujets, profils). Appelée par `--forme-etoile` dans `src/css/01-tokens.css`. |
+| `fond-bann-clair.svg` | Le décor de nuages derrière le bandeau de la page d'accueil, **version claire**. Appelé par `--entete-ornement` dans le thème clair. |
+| `fond-bann.svg` | Le même décor, **version sombre** : c'est le fichier d'origine. Sert aux thèmes Sombre et Saison. Les deux ne diffèrent pas que par la teinte des nuages — les traits sont noirs ici, blancs dans la version claire. |
+| `cadre-avatar.svg`, `cadre-liste-membre.svg`, `chouette.svg`, `nuage.svg`, `soleil-nuage-titre.svg` | Déposés, publiés, mais **pas encore appelés** par le forum. |
 
 ## Ajouter une image
 
