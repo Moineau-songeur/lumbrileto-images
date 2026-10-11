@@ -19,7 +19,6 @@ se pousse **chez lui**, séparément.
 | Fichier | Sert à |
 |---|---|
 | `etoile-forme.svg` | La silhouette de l'étoile, utilisée partout en découpe (puces de catégories, compteurs de la liste des sujets, profils). Appelée par `--forme-etoile` dans `src/css/01-tokens.css`. |
-| `etoile.svg`, `etoile2.svg` | Deux premiers essais d'export, gardés comme trace. **Rien ne s'en sert.** |
 
 ## Ajouter une image
 
