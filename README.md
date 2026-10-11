@@ -19,9 +19,29 @@ se pousse **chez lui**, séparément.
 | Fichier | Sert à |
 |---|---|
 | `etoile-forme.svg` | La silhouette de l'étoile, utilisée partout en découpe (puces de catégories, compteurs de la liste des sujets, profils). Appelée par `--forme-etoile` dans `src/css/01-tokens.css`. |
-| `fond-bann-clair.svg` | Le décor de nuages derrière le bandeau de la page d'accueil, **version claire**. Appelé par `--entete-ornement` dans le thème clair. |
-| `fond-bann.svg` | Le même décor, **version sombre** : c'est le fichier d'origine. Sert aux thèmes Sombre et Saison. Les deux ne diffèrent pas que par la teinte des nuages — les traits sont noirs ici, blancs dans la version claire. |
+| `fond-bann-clair.svg` | Le décor de nuages derrière le bandeau de la page d'accueil, **version claire**. |
+| `fond-bann-sombre.svg` | Le même décor, **version sombre**. Les deux ne diffèrent pas que par la teinte des nuages : les traits sont noirs ici, blancs dans la version claire. |
+| `fond-bann-saison.svg` | Sa **version saisonnière**. Copie conforme de la sombre pour l'instant, à recolorier quand tu voudras. |
 | `cadre-avatar.svg`, `cadre-liste-membre.svg`, `chouette.svg`, `nuage.svg`, `soleil-nuage-titre.svg` | Déposés, publiés, mais **pas encore appelés** par le forum. |
+
+## La règle des noms : `dessin-thème.svg`
+
+Un même dessin peut exister en trois versions, une par ambiance du forum :
+
+```
+fond-bann-clair.svg     fond-bann-sombre.svg     fond-bann-saison.svg
+```
+
+Les suffixes reconnus sont **`-clair`**, **`-sombre`** et **`-saison`**. Un fichier
+sans suffixe (`nuage.svg`) est une version unique, la même pour les trois thèmes.
+
+C'est cette règle qui permet à l'outil du simulateur (*Couleurs des SVG*) de
+regrouper les versions d'un dessin, de passer de l'une à l'autre, et d'en créer
+une qui manque à partir d'une autre. **Changer une version ne touche jamais les
+autres** : ce sont trois fichiers distincts.
+
+Si tu renommes un fichier, pense à l'adresse qui le désigne dans le CSS : elle
+contient le nom.
 
 ## Ajouter une image
 
